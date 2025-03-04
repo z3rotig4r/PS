@@ -2,7 +2,9 @@
 
 # Linked List 형태.
 # 단순한 배열 문제는 아님
-# stack을 사용해야 하는가? => ㅙ? => 
+# stack을 사용해야 하는가? => ㅙ? => cursor Index에 구애받지 않는 빠른 연산
+# | - - - - - -    +   - - - - - - - -
+# stack            +   Linked-List(좌우가 뚫린 DEQUE 이용)
 from collections import deque
 import sys
 
