@@ -13,7 +13,7 @@ int bfs(int y, int x, const int h, const int w){
     queue<pair<int, int>> q;
     int maxi=0;
     q.push({y, x});
-    visited[y][x] = 1;
+    visited[y][x] = 1; // 시작점은 이미 방문
     while(!q.empty()){
         int sy = q.front().first;
         int sx = q.front().second;
@@ -28,7 +28,7 @@ int bfs(int y, int x, const int h, const int w){
             q.push({ny, nx});
         }
     }
-    return maxi-1;
+    return maxi-1; // 시작점 방문은 시간 값에 포함 X
 }
 
 int main(){
